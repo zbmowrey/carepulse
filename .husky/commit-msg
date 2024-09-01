@@ -1,1 +1,1 @@
-npx commitlint --from HEAD~1 --to HEAD
+npx commitlint --edit "$1"
