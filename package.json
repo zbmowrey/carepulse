@@ -10,7 +10,7 @@
     "format:check": "prettier --check --ignore-path .gitignore .",
     "format": "prettier --write --ignore-path .gitignore .",
     "commit": "cz",
-    "prepare": "husky"
+    "prepare": "husky install && git config --local include.path ../.gitconfig"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
