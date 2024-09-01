@@ -1,0 +1,4 @@
+{
+  "*.{js,jsx,ts,tsx}": ["eslint --cache --fix", "npm run format:fix"],
+  "*.{yml,yaml,md,json,html}": ["npm run format:fix"]
+}
