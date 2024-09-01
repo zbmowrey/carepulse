@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format:check": "prettier --check --ignore-path .gitignore .",
-    "format": "prettier --write --ignore-path .gitignore .",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
     "commit": "cz",
-    "prepare": "husky install && git config --local include.path ../.gitconfig"
+    "prepare": "husky && git config --local include.path ../.gitconfig && husky install"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -41,6 +42,7 @@
     "eslint-config-next": "14.2.7",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
@@ -51,5 +53,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }

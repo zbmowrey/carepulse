@@ -1,2 +1,4 @@
 [core]
+  # We are using Commitizen to generate our commit messages, so we don't need
+  # Git to open your editor afterwards. This suppresses that during git commit.
   editor=cat
