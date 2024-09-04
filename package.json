@@ -12,8 +12,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
     "check-types": "tsc --noEmit --pretty",
     "commit": "cz",
     "prepare": "husky && git config --local include.path ../.gitconfig"
