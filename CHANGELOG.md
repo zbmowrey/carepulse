@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/zbmowrey/carepulse/compare/v1.1.0...v1.2.0) (2024-09-15)
+
+
+### Features
+
+* **registration:** add registration page and form personal information ([ca599f6](https://github.com/zbmowrey/carepulse/commit/ca599f677cb0b44dc5acd9778a6395fa93759b7e))
+
 # [1.1.0](https://github.com/zbmowrey/carepulse/compare/v1.0.1...v1.1.0) (2024-09-04)
 
 
