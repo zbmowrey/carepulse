@@ -2,6 +2,8 @@
 import { E164Number } from 'libphonenumber-js/core';
 import Image from 'next/image';
 import ReactDatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
 import { Control } from 'react-hook-form';
 import PhoneInput from 'react-phone-number-input';
 
@@ -112,7 +114,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             src='/assets/icons/calendar.svg'
             height={24}
             width={24}
-            alt='user'
+            alt='calendar'
             className='ml-2'
           />
           <FormControl>
